@@ -1,15 +1,4 @@
----
-title: Hexo, GitHub Pages部署流程
-date: 2024-12-26 14:55:24
-updated: 2024-12-26 14:55:24
-comments: true
-tags: hexo
-categories: 教程
----
-
 最近可能是因为 AI 时代的崛起, 越来越多的个人开发者开始在这个市场上崭露头角. 同时也在这些个人开发者身上看到了很多充满个人气息的博客信息. 因此也打算趁这个机会吧以前弄到一半荒废的 GitHub Pages 页面重新升级一遍. 同时发现一两年前大家强推的 `Hugo` 好像今年很少提及, 收到的去哪不都是 `Hexo`. 在这里记录一下 Hexo 搭建的过程中碰到的问题, 以及一些简单的教程
-
-<!--more-->
 
 文中的一些配置参考了下面两位的文章
 
@@ -186,4 +175,30 @@ comments 是否开启评论 true
 tags 标签
 categories 分类
 permalink url 中的名字（文件名）
+```
+
+同时因为 hexo 中文章并不会自动的折叠, 因此如果希望有一个 readMore 的折叠按钮, 可以通过在文章中间添加文本 `<!--more-->` 来实现
+
+在安装完成上述之后, 可以通过命令 `hexo s` 查看
+
+### 部署
+
+好了! 终于到可以部署到 GitHub Pages 了, 这里也很简单, 只需要几个设置
+
+1. 安装 hexo 部署工具
+
+运行下面的命令来安装
+
+```bash
+npm install hexo-deployer-git --save
+```
+
+2. 创建一个 Github. Io 的仓库目录, 这个仓库名字需要是用户名字开头, 比如 `username.github.io`
+3. 修改根目录的 `_config.yml` 文件中最下面的 deploy, 修改成如下所示 (**因为 GitHub 取消了密码认证,因此这里需要是 git 的地址** )
+
+```yaml
+deploy:
+	type: git
+	repository: git@github.com:username/username.github.io.git
+	branch: main
 ```
