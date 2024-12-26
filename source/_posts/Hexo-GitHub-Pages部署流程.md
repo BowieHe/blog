@@ -1,4 +1,17 @@
+---
+title: Hexo GitHub Pages部署流程
+date: 2024-03-26
+categories:
+    - 教程
+tags:
+    - Hexo
+    - GitHub Pages
+comments: true
+---
+
 最近可能是因为 AI 时代的崛起, 越来越多的个人开发者开始在这个市场上崭露头角. 同时也在这些个人开发者身上看到了很多充满个人气息的博客信息. 因此也打算趁这个机会吧以前弄到一半荒废的 GitHub Pages 页面重新升级一遍. 同时发现一两年前大家强推的 `Hugo` 好像今年很少提及, 收到的去哪不都是 `Hexo`. 在这里记录一下 Hexo 搭建的过程中碰到的问题, 以及一些简单的教程
+
+<!--more-->
 
 文中的一些配置参考了下面两位的文章
 
@@ -8,7 +21,7 @@
 
 ### NVM 安装
 
-如果在这个之前没有安装过 npm 的话, 需要先通过下面的命令来安装 npm
+如果在这个之前没有安装过 npm 的话,需要先通过下面的命令来安装 npm
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
@@ -201,4 +214,15 @@ deploy:
 	type: git
 	repository: git@github.com:username/username.github.io.git
 	branch: main
+```
+
+4. 然后执行下面的命令, 就可以推送到 GitHub pages 了. 如果用 GitHub 来管理配置和内容的话, 记得添加和提交到 GitHub
+
+```bash
+hexo generate #生成静态文件
+hexo deploy #推送到服务器
+
+git add .
+git commit -m "docs:message"
+git push
 ```
