@@ -228,3 +228,76 @@ git add .
 git commit -m "docs:message"
 git push
 ```
+
+## 高级配置
+
+#### 添加动态背景
+
+因为一直很喜欢没事去看动态背景里面的线聚集到一起, 又打散的样子, 因此这个项目里一定要有这个功能
+
+配置起来也比较简单, 可以参考页面 [canvas-nest](https://github.com/theme-next/theme-next-canvas-nest)
+
+先在 `source/_data` 目录下添加文件 `footer.swig` (如果 `_data` 目录不存在需要自己手动创建), 并且在文件中添加下面内容
+
+```
+<script color="0,0,255" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
+```
+
+之后去 NexT 的 `_config.yml` 文件中找到 `custom_file_path`, 并且取消其中 `footer` 的注释
+
+```yaml
+custom_file_path:
+	#head: source/_data/head.swig
+	footer: source/_data/footer.swig
+```
+
+#### 站点统计
+
+NexT 的主题之已经支持了 `不蒜子` 的数据统计, 不需要像上文的链接中自己配置了, 根据文件 `themes/next/layout/_partial/footer.swig` 中注释描述的信息, 只需要在 `next/_config.yml` 中找到 `busuanzi_count`, 将里面的 false 改成 true 即可实现页脚的页面统计了
+
+```yaml
+busuanzi_count:
+	enable: true
+	total_visitors: true
+	total_visitors_icon: fa fa-user
+	total_views: true
+	total_views_icon: fa fa-eye
+	post_views: true
+	post_views_icon: far fa-eye
+```
+
+#### 去掉文章自动编号
+
+在文件 `theme/_config.yml` 文件中找到 toc 属性，将其中的 `number` 属性设置成 `false`，如下：
+
+```yaml
+toc:
+	enable: true
+	# Automatically add list number to toc.
+	number: false
+	# If true, all words will placed on next lines if header width longer then sidebar width.
+	wrap: false
+	# If true, all level of TOC in a post will be displayed, rather than the activated part of it.
+	expand_all: false
+	# Maximum heading depth of generated toc.
+	max_depth: 6
+```
+
+#### 网页底部添加字数统计
+
+切换到根目录, 安装插件
+
+```bash
+npm install hexo-wordcount --save
+```
+
+然后在文件 `/themes/next/layout/_partials/footer.swig` 底部加上如下代码
+
+```javascript
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共{{ totalcount(site) }}字</span>
+</div>
+```
+
+> 在修改上述配置的时候发现 footer 底下的 powered by 如果不喜欢, 可以从 config. Yml 文件中通过修改 powered 值为 false 来取消

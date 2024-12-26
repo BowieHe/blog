@@ -216,10 +216,10 @@ footer:
 
     # If not defined, `author` from Hexo `_config.yml` will be used.
     # Set to `false` to disable the copyright statement.
-    copyright:
+    copyright: BowieHe
 
     # Powered by Hexo & NexT
-    powered: true
+    powered: false
 
     # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
     beian:

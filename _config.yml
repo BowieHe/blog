@@ -28,7 +28,13 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md
+
+archive_generator:
+    enabled: true # 是否启用归档页面
+    path: archives # 归档页面的路径（如 `/archives/`）
+    per_page: 10 # 每页显示的文章数量，`0` 表示不分页
+    order_by: -date # 排序方式，默认是按日期降序
 
 # Writing
 new_post_name: :title.md # File name of new posts
