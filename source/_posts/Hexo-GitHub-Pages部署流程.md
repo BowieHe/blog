@@ -9,7 +9,9 @@ tags:
 comments: true
 ---
 
-最近可能是因为 AI 时代的崛起, 越来越多的个人开发者开始在这个市场上崭露头角. 同时也在这些个人开发者身上看到了很多充满个人气息的博客信息. 因此也打算趁这个机会吧以前弄到一半荒废的 GitHub Pages 页面重新升级一遍. 同时发现一两年前大家强推的 `Hugo` 好像今年很少提及, 收到的去哪不都是 `Hexo`. 在这里记录一下 Hexo 搭建的过程中碰到的问题, 以及一些简单的教程
+最近可能是因为 AI 时代的崛起, 越来越多的个人开发者开始在这个市场上崭露头角. 同时也在这些个人开发者身上看到了很多充满个人气息的博客信息. 因此也打算趁这个机会吧以前弄到一半荒废的 GitHub Pages 页面重新升级一遍. 同时发现一两年前大家强推的 `Hugo` 好像今年很少提及, 搜索结果关联的都是 `Hexo`.
+
+因此在这里记录一下 Hexo 搭建的过程中碰到的问题, 以及一些简单的教程
 
 <!--more-->
 
@@ -29,7 +31,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
-安装脚本会将 NVM 仓库克隆到 ~/. Nvm 目录，并更新您的配置文件（~/. Bash_profile、~/. Zshrc、~/. Profile 或 ~/. Bashrc）。
+安装脚本会将 NVM 仓库克隆到 \~/.nvm 目录，并更新您的配置文件（\~/.bash_profile、\~/.zshrc、\~/.profile 或 \~/. bashrc）。
 
 通过命令 `nvm --version` 来验证是否安装成功 (比如我的返回就是 `0.35.3`)
 
