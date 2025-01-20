@@ -1,19 +1,22 @@
 ---
-title: Hexo GitHub Pages部署流程
+title: Hexo GitHub Pages 部署流程
 date: 2024-12-26
+updated: 2024-12-26
 categories:
     - 教程
 tags:
     - Hexo
     - GitHub Pages
 comments: true
+description: Hexo 配置教程
+keywords:
+top_img: https://anne416wu.github.io/gallery/thumbnails/hexo-cover.png
+cover: https://anne416wu.github.io/gallery/thumbnails/hexo-cover.png
 ---
 
 最近可能是因为 AI 时代的崛起, 越来越多的个人开发者开始在这个市场上崭露头角. 同时也在这些个人开发者身上看到了很多充满个人气息的博客信息. 因此也打算趁这个机会吧以前弄到一半荒废的 GitHub Pages 页面重新升级一遍. 同时发现一两年前大家强推的 `Hugo` 好像今年很少提及, 搜索结果关联的都是 `Hexo`.
 
 因此在这里记录一下 Hexo 搭建的过程中碰到的问题, 以及一些简单的教程
-
-<!--more-->
 
 文中的一些配置参考了下面两位的文章
 
