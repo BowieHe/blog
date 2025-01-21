@@ -50,8 +50,8 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-    fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-    fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+    fab fa-github: https://github.com/BowieHe || Github || '#24292e'
+    fas fa-envelope: mailto:hbw234@outlook.com || Email || '#4a7dbe'
 
 # --------------------------------------
 # Image Settings
@@ -60,17 +60,17 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-    img: /images/IMG_20221225_205912.jpg
+    img: https://blog-1321748307.cos.ap-shanghai.myqcloud.com/img/IMG_20221225_205912.jpg
     effect: false
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: /images/IMG_0472.jpeg
+default_top_img: https://blog-1321748307.cos.ap-shanghai.myqcloud.com/img/IMG_0472.jpeg
 
 # The banner image of index page
-index_img: /images/IMG_0469.jpeg
+index_img: https://blog-1321748307.cos.ap-shanghai.myqcloud.com/img/IMG_0469.jpeg
 
 # The banner image of archive page
 archive_img:
@@ -105,7 +105,7 @@ cover:
     archives_enable: true
     # When cover is not set, the default cover is displayed
     default_cover:
-        - /images/IMG_20221225_205912.jpg
+        - https://blog-1321748307.cos.ap-shanghai.myqcloud.com/img/IMG_20221225_205912.jpg
           # - xxx.jpg
 
 # Replace Broken Images
@@ -793,7 +793,7 @@ preloader:
 enter_transitions: true
 
 # Default display mode - light (default) / dark
-display_mode: dark
+display_mode: light
 
 # Configuration for beautifying the content of the article
 beautify:
