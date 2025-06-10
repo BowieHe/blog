@@ -106,7 +106,16 @@ theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+# deploy:
+#     type: git
+#     repository: git@github.com:BowieHe/BowieHe.github.io.git
+#     branch: main
 deploy:
-    type: git
-    repository: git@github.com:BowieHe/BowieHe.github.io.git
-    branch: main
+    type: rsync
+    host: 107.173.61.170
+    user: root
+    root: /var/www/blog
+    port: 22
+    delete: true
+    verbose: true
+    ignore_errors: false
