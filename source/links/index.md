@@ -94,7 +94,8 @@ type: "links"
 
 ### 本站信息
 
--   **网站名称**：Bowie
+-   **网站名称**：小何的岛 🏝️
+-   **站长名称**：Bowie
 -   **网站地址**：https://bowiehe.github.io
 -   **网站描述**：前端/后端/大数据/AI 开发,记录日常所思所想,阅读感悟
 -   **网站头像**：https://blog-1321748307.cos.ap-shanghai.myqcloud.com/img/IMG_20221225_205912.jpg
