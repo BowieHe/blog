@@ -1,6 +1,7 @@
 ---
 title: 本地知识库：基于Qdrant的向量化和搜索
 date: 2026-01-15 17:06:33
+updated: 2026-01-15 17:06:33
 categories:
     - 教程
 tags:
