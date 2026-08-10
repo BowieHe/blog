@@ -858,15 +858,15 @@ hexo-server@^3.0.0:
     picocolors "^1.0.0"
     serve-static "^1.14.1"
 
-hexo-theme-butterfly@^5.6.0:
-  version "5.6.0"
-  resolved "https://registry.yarnpkg.com/hexo-theme-butterfly/-/hexo-theme-butterfly-5.6.0.tgz#7f4c4fa612ac49f6939be1cf971924f671d4c14f"
-  integrity sha512-qfL1+pmdXqp6unwilE3EMYPGgukyO5r5k7MplfhVAfvAgtv5M/PBNGmI/38nFG0mKE22PKlNVs0ehEFSYaOSHA==
+hexo-theme-butterfly@^5.7.0:
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/hexo-theme-butterfly/-/hexo-theme-butterfly-5.7.0.tgz#f9da3a6c699bb757fc99d4c430205426078ae874"
+  integrity sha512-MDPlFHbgXRS7OmFYOZfFmA9ehFIkXN6Us1VjCaMI1MDgmJ+IKyMEQeAJBiH6rTUd0gt+d09+ppx87ZMx0S0iUw==
   dependencies:
     hexo-renderer-pug "^3.0.0"
     hexo-renderer-stylus "^3.0.1"
     hexo-util "^4.0.0"
-    moment-timezone "^0.6.2"
+    moment-timezone "^0.6.3"
 
 hexo-util@^2.7.0:
   version "2.7.0"
@@ -1287,10 +1287,10 @@ moment-timezone@^0.5.46:
   dependencies:
     moment "^2.29.4"
 
-moment-timezone@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.6.2.tgz#a704cca03ee502f0df6edd42efcdcc61ee03190e"
-  integrity sha512-lDsQv8FoGdBUdf0+TjGsq2orxKuXdwFlQ6Zw6TX3xIcTwTfEpCLyKqvEauvCHJ8iu3KBV8+uPhlv70YsNGdUBQ==
+moment-timezone@^0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.6.3.tgz#e386bad3116567a44477653ad6543b071bc153b7"
+  integrity sha512-pVEPA/HCFHHbwJ130ywnzYuZpkEGcP6Daa/OwNebpA18MybeFHmQilAGGovXgWijQ8vQtmud9jZrziUBgsykfg==
   dependencies:
     moment "^2.29.4"
 
